@@ -2,10 +2,13 @@ const express = require("express");
 const cors = require("cors");
 const Database = require("better-sqlite3");
 const path = require("path");
+const fs = require("fs");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const db = new Database(path.join(__dirname, "data", "pasargad2026.db"));
+const dataDir = path.join(__dirname, "data");
+fs.mkdirSync(dataDir, { recursive: true });
+const db = new Database(path.join(dataDir, "pasargad2026.db"));
 
 app.use(cors());
 app.use(express.json({ limit: "10mb" }));
