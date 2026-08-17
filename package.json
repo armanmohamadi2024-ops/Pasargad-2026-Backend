@@ -1,0 +1,16 @@
+{
+  "name": "pasargad-2026-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend API for Pasargad 2026 clothing store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "better-sqlite3": "^12.4.1"
+  }
+}
