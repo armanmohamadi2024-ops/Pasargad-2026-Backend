@@ -1,8 +1,8 @@
 {
   "name": "pasargad-2026-backend",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Backend API for Pasargad 2026 clothing store",
+  "description": "Pasargad 2026 clothing store API using PostgreSQL",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,7 +11,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "better-sqlite3": "^12.4.1"
+    "pg": "^8.16.3"
   },
   "engines": {
     "node": "22.x"
